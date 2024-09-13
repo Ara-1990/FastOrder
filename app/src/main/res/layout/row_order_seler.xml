@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/orderDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="dd/MM/yyyy"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/orderIdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Order: 121212"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phoneTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderIdTv"
+            android:text="buyer phone"
+            android:textColor="@color/black"
+            android:textSize="10sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderIdTv"
+            android:layout_marginLeft="65dp"
+            android:text="phone"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/amountTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneTv"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/amountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneTv"
+            android:layout_marginLeft="45dp"
+            android:text="Total Amount"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderDateTv"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:text="In progres"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

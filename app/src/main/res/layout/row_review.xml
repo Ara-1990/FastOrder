@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/profileLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profileIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_person">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/buyernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="buyer name"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/profileLL"
+            android:layout_marginEnd="10dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:numStars="5">
+
+        </RatingBar>
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileLL"
+            android:layout_toEndOf="@+id/ratingBar"
+            android:text="dd/MM/yyyy"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/reviewTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTv"
+            android:layout_marginTop="5dp"
+            android:text="the original review of the user"
+            android:textColor="@color/black"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

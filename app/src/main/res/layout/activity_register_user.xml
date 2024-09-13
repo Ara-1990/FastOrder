@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUserActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/pinkOrange"
+        tools:ignore="MissingConstraints">
+
+
+
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:background="@color/transpernet"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+        </ImageButton>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profileIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="85dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_person"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true"
+        tools:ignore="MissingConstraints">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+
+    <EditText
+        android:id="@+id/fullNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="5dp"
+        android:hint="name"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapWords"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/profileIv">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="5dp"
+        android:hint="Phone"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameEt">
+
+    </EditText>
+
+
+
+
+
+    <EditText
+        android:id="@+id/emailIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_basiline_email"
+        android:drawablePadding="5dp"
+        android:hint="Email"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEt">
+
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_key"
+        android:drawablePadding="5dp"
+        android:hint="Password"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailIv">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/compirmPasswordEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_key"
+        android:drawablePadding="5dp"
+        android:hint="Comfirm password"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEt">
+
+    </EditText>
+
+
+
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="15dp"
+        android:background="@drawable/for_activity_solid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/compirmPasswordEt">
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/registerSeler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:text="Register as seler"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:layout_margin="20dp"
+        android:inputType="textPersonName|textCapWords"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn"
+        android:textSize="15dp">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
