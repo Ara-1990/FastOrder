@@ -1,0 +1,32 @@
+#  Order Food App
+Android app for ordering food.
+##  Technologies
+- Java
+- Firebase-Realtime-Database,
+- Firebase-Storage
+- Firebase-auth
+- Picasso
+- Glide
+- AndroidEasySQL-Library
+- Google Play Services Location
+- ##  Possibilities
+- Registration as Seller or buyer
+- Login, Logout
+- Delete account
+- Change password for login
+- ## Buyer
+- Add order to cart
+- Search  food
+- Filter food by group
+- Call the food vendor
+- Make confirm order
+- See order in progress or in cansel
+- Write review for seller
+- ## Seller
+- Find the address of the orderer
+- Accept and cancel the order
+- Add new product to the database
+- Dellete product from database
+- Update product to the database
+- ## link to app
+- https://appgallery.huawei.com/app/C114180485
